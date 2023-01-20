@@ -40,6 +40,8 @@ way it works.
 As time goes by and the needs of the users change,
 a web server in general needs maintenance to stay functioning and
 modifications to meet the new needs.
+These updates include tasks such as fixing bugs in the server,
+improving its performance, and adding new features.
 During these updates,
 it is crucial that the server as a piece of software is highly maintainable
 and extensible,
@@ -47,8 +49,23 @@ otherwise it would result in large maintenance costs.
 
 To achieve such,
 the server needs to be resilient to changes applied to it.
-It needs to be clear and modularized.
+The code structure needs to be clear and modularized,
+and the exposed application programming interface (API) needs to be just
+enough to control the programs behavior.
 
 ## User Experience
+
+The web forum needs to be user-friendly.
+
+As mobile applications advance,
+users are now more demanding about the ease of use of web applications.
+A web forum is a place to communicate with other users.
+Better user experience can lead to better users psychological conditions,
+and promote them to be more positive online.
+
+Easy and obvious navigation,
+clean and mobile-first interface,
+and glitch-free and responsive design are needed to ensure a nice user
+experience.
 
 ## Server Performance
