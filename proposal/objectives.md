@@ -47,6 +47,11 @@ it is crucial that the server as a piece of software is highly maintainable
 and extensible,
 otherwise it would result in large maintenance costs.
 
+On the other hand,
+for the server to be useful for the future,
+developers should be able to customize it and reuse a portion of its
+functionalities.
+
 To achieve such,
 the server needs to be resilient to changes applied to it.
 The code structure needs to be clear and modularized,
@@ -69,3 +74,15 @@ and glitch-free and responsive design are needed to ensure a nice user
 experience.
 
 ## Server Performance
+
+The forum web server needs to be able to handle high throughput and scale well.
+
+Successful web forums can have its user numbers growing quadratically,
+and such rapid growth can lead to server overloads,
+slowing it down or even causing server downtime.
+
+Two key solutions to this problem are baseline performance and scalability.
+A server that is by itself more efficient and performant would naturally
+perform better.
+However, it also needs to gain performance relatable to the increase in
+the resources provided to it.
