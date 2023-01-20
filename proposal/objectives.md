@@ -29,9 +29,25 @@ but such their visibility can also be tuned as needed.
 These contents can be edited, hidden, or deleted by the author or moderators.
 
 Besides satisfying these fundamentals above,
-the server should meet the following requirements.
+the server should meet the following requirements to be practical and valuable
+in production.
 
 ## Maintainability and Extendability
+
+It should be relatively straightforward to maintain the server and change the
+way it works.
+
+As time goes by and the needs of the users change,
+a web server in general needs maintenance to stay functioning and
+modifications to meet the new needs.
+During these updates,
+it is crucial that the server as a piece of software is highly maintainable
+and extensible,
+otherwise it would result in large maintenance costs.
+
+To achieve such,
+the server needs to be resilient to changes applied to it.
+It needs to be clear and modularized.
 
 ## User Experience
 
