@@ -10,9 +10,11 @@ accomplish certain tasks.
 Besides these, the server needs to satisfy the special functionality that
 an academic forum has.
 
+We will apply corresponding methodologies to address these needs.
+
 ## Back End
 
-The plan is to use the Elixir Programming Language and the Pheonix web framework
+The plan is to use the Elixir Programming Language and the Phoenix web framework
 to create the back end of the server.
 
 Built on top of the Erlang programming language and its Open Telecom Platform
@@ -29,9 +31,23 @@ programming because each function owns all the data it needs to do its task.
 It is also easier to define interfaces and APIs that have clear boundaries
 using functional programming.
 
+We will use the Phoenix web framework to obtain basic back end capabilities.
+Implementing the HTTP protocol,
+parsing JSONs, preventing denial of service attacks,
+and other basic capabilities should not be reimplemented,
+but rather inherited from a battle-tested framework.
+
+To properly use Elixir and Phoenix,
+we need to first get used to these tools.
+The plan is to first build dummy applications in Elixir and web servers with
+Phoenix so we can gain experience with the common pattern in this programming
+environment.
+After that, we can use the experience to help us design the architecture of
+the web server.
+
 ## Front End
 
 The plan is to use Svelte for the front-end computation,
-and Pheonix and Pheonix LiveView to deliver and update the front end.
+and Phoenix and Phoenix LiveView to deliver and update the front end.
 
 ## Auxiliary Libraries

@@ -2,7 +2,10 @@
 
 <!-- What are the key goals of the project? -->
 
-The goal is to create a piece of software that functions as a forum web server.
+The goal is to create a piece of software that functions as a forum web server
+that fits academic use.
+
+<!-- todo: merge in `academic use` -->
 
 ## Forum Web Server
 
