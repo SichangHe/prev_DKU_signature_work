@@ -2,6 +2,29 @@
 
 <!-- What is the importance, to you, of the project? -->
 
+## Motivation
+
+My experiences using forums for academic discussions are unpleasant.
+These discussions include discussions for courses on Sakai and Ed,
+and general discussions on Stack Exchange.
+These experiences are unpleasant for different reasons:
+for Sakai Discussion,
+the web interfaces are unintuitive to use and irresponsive;
+for Ed,
+the online editor lacks enough power to help me type out what I want;
+and for Stack Exchange,
+it is not obvious which comments are replies to which;
+and for all of them,
+it is inconvenient to cite any sources so users usually only includes a link.
+
+Since these forum platforms are proprietary,
+organizations cannot simply tweak them and rather need to rely on the
+platform provider to address these issues or provide an extra setting.
+It would be nice to provide an extensible open source forum for organization
+to adapt to their own usage.
+
+Besides the practical applications,
+the design and implementation is also an attractive task.
 A generic academic forum web server is particularly interesting to study
 because it brings the below challenges.
 

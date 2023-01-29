@@ -3,8 +3,8 @@
 <!-- How do you intend to accomplish the project? -->
 
 The forum web server, like most web server applications,
-will require a back end to serve communicate with its clients,
-and front end that will get shipped to the user for them to interact with,
+will require a back end to communicate with its clients,
+and a front end that will get shipped to the user for them to interact with,
 and standalone auxiliary libraries that help the front end and the back end
 accomplish certain tasks.
 Besides these, the server needs to satisfy the special functionality that
