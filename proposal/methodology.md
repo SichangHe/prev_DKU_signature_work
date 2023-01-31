@@ -19,8 +19,8 @@ to create the back end of the server.
 
 Built on top of the Erlang programming language and its Open Telecom Platform
 (OTP),
-Elixir promises free concurrency, publish-subscribe, isolation,
-first class documentation, and performance.
+Elixir promises free concurrency, publish-subscribe (Pub/Sub),
+process isolation, first class documentation, and performance.
 
 As a trade-off, Elixir enforces developers to write purely functional code,
 which is distinct from the more popular imperative and object-oriented
@@ -36,6 +36,7 @@ Implementing the HTTP protocol,
 parsing JSONs, preventing denial of service attacks,
 and other basic capabilities should not be reimplemented,
 but rather inherited from a battle-tested framework.
+<!-- todo: stuck -->
 
 To properly use Elixir and Phoenix,
 we need to first get used to these tools.
@@ -47,7 +48,29 @@ the web server.
 
 ## Front End
 
-The plan is to use Svelte for the front-end computation,
-and Phoenix and Phoenix LiveView to deliver and update the front end.
+The plan is to mainly use Phoenix and Phoenix LiveView to deliver and update
+the front end,
+and Svelte when front-end computation is needed.
+
+The styling should not be the major part of the project because different
+users of this server will probably want to tweak the theme themselves.
+For the ease and speed of development,
+we will use Tailwindcss to style the front end,
+and probably use some Tailwindcss-specific utility components such as
+TailwindUI.
 
 ## Auxiliary Libraries
+
+Most of the components that could be separated into libraries will be
+Elixir libraries because this will be an Elixir application.
+This Elixir libraries could either be a set of synchronous functions
+or some services implemented using Genserver.
+
+If the performance of any library is critical,
+we consider making Elixir native implemented functions (NIFs) library using
+the Rust programming language.
+Rust is ideal for this purpose because it is one of the fastest programming
+languages,
+Rust NIFs can be made safe and guaranteed not to crash the Erlang Virtual
+Machine (VM),
+and I am familiar with Rust since I have work with it a lot.

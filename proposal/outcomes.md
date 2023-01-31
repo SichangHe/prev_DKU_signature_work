@@ -8,8 +8,9 @@ Include any non-written deliverables such as codes, exhibitions, etc -->
 The major outcome would be the piece of software,
 a generic academic forum web server.
 
-It should come in the form of a set of auxiliary libraries under the MIT
-license and a main project under the AGPL license.
+It should come in the form of a set of auxiliary libraries
+and a monolithic web server,
+all under the MIT license.
 All the parts should be well-documented and provide clear APIs.
 
 ## System Design Experience
@@ -30,3 +31,5 @@ The testing will allow us to sense the immediate problem we have and improve
 upon it,
 while demonstrating the features of the forum web server and the openness of
 its development.
+
+<!-- todo: what else? -->
