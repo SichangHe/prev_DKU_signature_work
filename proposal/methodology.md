@@ -38,6 +38,9 @@ and other basic capabilities should not be reimplemented,
 but rather inherited from a battle-tested framework.
 <!-- todo: stuck -->
 
+We will use PostgreSQL for the database and Phoenix's Ecto Object-Relational
+Mapping (ORM).
+
 To properly use Elixir and Phoenix,
 we need to first get used to these tools.
 The plan is to first build dummy applications in Elixir and web servers with
