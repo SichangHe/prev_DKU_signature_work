@@ -2,40 +2,34 @@
 
 <!-- What are the key goals of the project? -->
 
-The goal is to create a piece of software that functions as a forum web server
-that fits academic use.
-
-<!-- todo: merge in `academic use` -->
+The goal is to create a forum web server that is easy to maintain,
+extensible, and fits academic use.
 
 ## Forum Web Server
 
-A server is a piece of software that can serves information to its clients,
-which themselves are also software.
-A web server is a server that communicates with its clients via web
-communication protocols.
-Among these protocols,
-the most notable two are the Hypertext Transfer Protocol (HTTP) and its version
-2 (HTTP2).
+A web server communicates with its clients via internet protocols such as
+the Hypertext Transfer Protocol (HTTP).
 
-Web servers can support any client that implements the corresponding protocol,
-but the most popular clients are web browsers.
-Web browsers empowers the users to access web applications,
-services provided by connecting users' browsers to specific web servers,
-without having any knowledge of the programming behavior of any server.
+Our prioritized client to support is the web browser,
+most popular clients.
+Modern web servers often serves to the browser web applications,
+which functions the same as native applications with graphical user interface
+(GUI).
+This empowers the users to access remote resources easily via a GUI.
 
 A forum web server serves a web application called a web forum.
 In a web forum,
 users can create *posts* on particular topics and *comments* in response to
 other people's posts and comments.
 Posts and comments are usually publicly visible among a group of users,
-but such their visibility can also be tuned as needed.
+but their visibility can also be tuned as needed.
 These contents can be edited, hidden, or deleted by the author or moderators.
 
 Besides satisfying these fundamentals above,
 the server should meet the following requirements to be practical and valuable
-in production.
+for academic organizations to use.
 
-## Maintainability and Extendability
+## Maintainability and Extensibility
 
 It should be relatively straightforward to maintain the server and change the
 way it works.
@@ -48,35 +42,35 @@ improving its performance, and adding new features.
 During these updates,
 it is crucial that the server as a piece of software is highly maintainable
 and extensible,
-otherwise it would result in large maintenance costs.
+otherwise it would either result in large maintenance costs and suggests the
+organizations to switch to other products,
+or it would fail the organizations' needs.
 
-On the other hand,
-for the server to be useful for the future,
-developers should be able to customize it and reuse a portion of its
+Developers should be able to customize it and reuse a portion of its
 functionalities.
-
-To achieve such,
-the server needs to be resilient to changes applied to it.
-The code structure needs to be clear and modularized,
-and the exposed application programming interface (API) needs to be just
-enough to control the programs behavior.
+For the server to be future-proof,
+the code structure needs to be clear and modularized,
+and the exposed application programming interface (API) should ideally to be
+just enough to control the programs behavior.
 
 ## User Experience
 
 The web forum needs to be user-friendly.
 
-As mobile applications advance,
-users are now more demanding about the ease of use of web applications.
-A web forum is a place to communicate with other users.
-Better user experience can lead to better users psychological conditions,
-and promote them to be more positive online.
-
-Easy and obvious navigation,
-clean and mobile-first interface,
-and glitch-free and responsive design are needed to ensure a nice user
-experience.
+Not all academic users are internet enthusiasts,
+they need and intuitive user experience.
+The server should prioritize the focus on academic discussions,
+and help the users to stay in a positive mood during their activities.
+To help with users experience,
+the server should provide functions that academic users need in obvious places
+in the user interface,
+support internationalization and localization (i18n) for
+users using different languages,
+and follow a mobile-first approach.
 
 ## Server Performance
+
+<!-- May not need this part? -->
 
 The forum web server needs to be able to handle high throughput and scale well.
 

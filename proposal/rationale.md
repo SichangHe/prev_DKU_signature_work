@@ -58,7 +58,7 @@ A forum is a place where a group of individuals can discuss.
 A forum on the web enables users to discuss together about what they care
 about regardless of the physical distance between them.
 
-Forum on the web brings up all the major challenges web programming could:
+Forum on the web brings up all the major challenges web programming brings:
 
 - Persisting user states over unstable network.
 
@@ -96,7 +96,7 @@ provide:
     and tedious,
     and encourages the participants to skip doing so.
 
-    Modern academic forums should remove a large part of this burden to the
+    Modern academic forums should move a large part of this burden to the
     computer and automatically generate citation based on links or text search.
 - Visibility groups that are small and complex.
 
@@ -118,7 +118,7 @@ provide:
     Academic activities vary and imposes different requirements to their
     platforms.
 
-It also does not require much artificial content moderation because people in
+It also does not require much manual content moderation because people in
 an academic forum are usually well-behaved.
 
 Moreover, academic forums are in high demand as the academia world is quite
