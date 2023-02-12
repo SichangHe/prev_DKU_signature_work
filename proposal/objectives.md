@@ -11,7 +11,7 @@ A web server communicates with its clients via internet protocols such as
 the Hypertext Transfer Protocol (HTTP).
 
 Our prioritized client to support is the web browser,
-most popular clients.
+the most popular clients.
 Modern web servers often serves to the browser web applications,
 which functions the same as native applications with graphical user interface
 (GUI).
@@ -58,7 +58,7 @@ just enough to control the programs behavior.
 The web forum needs to be user-friendly.
 
 Not all academic users are internet enthusiasts,
-they need and intuitive user experience.
+they need an intuitive user experience.
 The server should prioritize the focus on academic discussions,
 and help the users to stay in a positive mood during their activities.
 To help with users experience,

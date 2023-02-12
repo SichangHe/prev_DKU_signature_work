@@ -66,10 +66,10 @@ TailwindUI.
 
 Most of the components that could be separated into libraries will be
 Elixir libraries because this will be an Elixir application.
-This Elixir libraries could either be a set of synchronous functions
-or some services implemented using Genserver.
+These Elixir libraries could either be a set of synchronous functions
+or some services implemented using GenServer.
 
-If the performance of any library is critical,
+If the performance of any of the libraries is critical,
 we consider making Elixir native implemented functions (NIFs) library using
 the Rust programming language.
 Rust is ideal for this purpose because it is one of the fastest programming
