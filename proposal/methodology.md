@@ -12,6 +12,11 @@ an academic forum has.
 
 We will apply corresponding methodologies to address these needs.
 
+<!-- For the server to be future-proof,
+the code structure needs to be clear and modularized,
+and the exposed application programming interface (API) should ideally to be
+just enough to control the programs behavior. -->
+
 ## Back End
 
 The plan is to use the Elixir Programming Language and the Phoenix web framework
