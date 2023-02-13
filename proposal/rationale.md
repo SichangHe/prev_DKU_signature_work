@@ -5,8 +5,8 @@
 ## Motivation
 
 My experiences using forums for academic discussions are unpleasant.
-These discussions include discussions for courses on Sakai and Ed,
-and general discussions on Stack Exchange.
+These discussions include discussions for courses on [Sakai][Sakai] and [Ed][Ed],
+and general discussions on [Stack Exchange][Stack Exchange].
 These experiences are unpleasant for different reasons:
 for Sakai Discussion,
 the web interfaces are unintuitive to use and irresponsive;
@@ -17,28 +17,32 @@ it is not obvious which comments are replies to which;
 and for all of them,
 it is inconvenient to cite any sources so users usually only includes a link.
 
-Since these forum platforms are proprietary,
+I would like to provide an extensible open source forum for organization
+to adapt to their own usage.
+Since the above forum platforms (except Sakai) are proprietary,
 organizations cannot simply tweak them and rather need to rely on the
 platform provider to address these issues or provide an extra setting.
-It would be nice to provide an extensible open source forum for organization
-to adapt to their own usage.
+By making a fulling open source, performant and extensible academic forum,
+I can give academic organizations the full power to adapt it to their needs
+by programmatically modifying the interface.
 
 Besides the practical applications,
 the design and implementation is also an attractive task.
 A generic academic forum web server is particularly interesting to study
 because it brings the below challenges.
 
-## Web Programming
+## Web Development
 
-Web programming refers to programming software anywhere in the technology stack
-of providing users online experiences.
-It is one of the most challenging aspects of programming,
-as it involves handling communication with the web client through the network,
+[Web development][Web development] is one of the most challenging aspects of programming.
+It refers to all software development that provides users online experiences,
+which is also referred to as the [*Full Stack*][Full Stack].
+It is challenging because it involves
+handling communication with the web client through the network,
 maintaining the state of the application on both sides of the wire,
 persisting data on disks using software like databases,
 and scaling up the above abilities by taking up more resources.
 
-Web programming brings up three immediate challenges:
+Web development brings up three immediate challenges:
 
 - Fault tolerance in state management in systems programming when connecting
     to clients with potentially unstable network conditions.
@@ -49,7 +53,7 @@ Web programming brings up three immediate challenges:
     with more CPU cores and even more computer units.
 - Managing the growing complexity of the code base and database.
 
-These challenges make web programming the most desirable choice to gain more
+These challenges make web development the most desirable choice to gain more
 knowledge and experience on systems programming.
 
 ## Forum on the Web
@@ -125,3 +129,9 @@ Moreover, academic forums are in high demand as the academia world is quite
 new to the concept and experiments are being made.
 A generic server could satisfy a large portion of the requirements and lessen
 the burden on each academic organization to develop it from scratch.
+
+[Ed]: https://edstem.org
+[Full Stack]: https://www.academia.edu/40632537/The_Full_Stack_Developer_Your_Essential_Guide_to_the_Everyday_Skills_Expected_of_a_Modern_Full_Stack_Web_Developer_Chris_Northwood
+[Sakai]: https://www.sakailms.org
+[Stack Exchange]: https://stackexchange.com
+[Web development]: https://en.wikipedia.org/wiki/Web_development
