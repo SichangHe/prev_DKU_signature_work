@@ -92,16 +92,22 @@ We will leverage LiveView to move all the front-end logic onto the server
 and communicate the front end with the back end simply using function calls
 on the server.
 
-## Front End
+### Front-End technologies
 
-The plan is to mainly use Phoenix and Phoenix LiveView to deliver and update
-the front end,
-and Svelte when front-end computation is needed.
+Despite using LiveView,
+we will prepare front-end technologies including [esbuild][esbuild],
+[Svelte][Svelte], and [Tailwindcss][Tailwindcss].
+We will use Svelte as our JavaScript framework when we need client-side logic.
+esbuild will be used bundle Svelte and other JavaScript code.
+We will use Tailwindcss to style the front end because of its ease of use.
+
+Academic organizations would probably want a front end customizable using
+JavaScript, so we need to leave enough room for additional JavaScript logic
+and extensions.
 
 The styling should not be the major part of the project because different
 users of this server will probably want to tweak the theme themselves.
 For the ease and speed of development,
-we will use Tailwindcss to style the front end,
 and probably use some Tailwindcss-specific utility components such as
 TailwindUI.
 
@@ -143,6 +149,7 @@ and I am familiar with Rust since I have work with it a lot.
 [BEAM]: https://www.erlang.org/blog/a-brief-beam-primer/
 [Ecto]: https://hexdocs.pm/ecto/Ecto.html
 [Elixir]: https://elixir-lang.org
+[esbuild]: https://esbuild.github.io
 [Full Stack]: https://www.academia.edu/40632537/The_Full_Stack_Developer_Your_Essential_Guide_to_the_Everyday_Skills_Expected_of_a_Modern_Full_Stack_Web_Developer_Chris_Northwood
 [flyio]: https://fly.io
 [flyio stack]: https://fly.io/docs/hiring/stack/
@@ -154,3 +161,5 @@ and I am familiar with Rust since I have work with it a lot.
 [Phoenix]: https://www.phoenixframework.org
 [PostgreSQL]: https://www.postgresql.org
 [REST]: https://en.wikipedia.org/wiki/Representational_state_transfer
+[Svelte]: https://svelte.dev
+[Tailwindcss]: https://tailwindcss.com
