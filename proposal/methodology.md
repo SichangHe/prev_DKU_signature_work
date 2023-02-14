@@ -72,7 +72,8 @@ by simply defining pure functions.
 ### Phoenix Framework
 
 We will use the Phoenix Framework as a solid web server base.
-Phoenix is a full stack web framework that provides all the basic features
+Phoenix is a [full stack][Full Stack] [MVC][MVC]
+web framework that provides all the basic features
 that a web server needs,
 from handling HTTP requests to scaling horizontally.
 
@@ -82,8 +83,16 @@ For example, [fly.io][flyio] uses Phoenix for
 
 <!-- todo: stuck -->
 
-We will use PostgreSQL for the database and Phoenix's Ecto Object-Relational
-Mapping (ORM).
+### Database
+
+We will use [PostgreSQL][PostgreSQL] for the database and [Ecto][Ecto] for
+Object-Relational Mapping ([ORM][ORM]).
+PostgreSQL is currently the most powerful open source relational database,
+and has been the recommended database for Phoenix applications.
+Ecto is the ORM that comes with Phoenix.
+Since Ecto is database agnostic,
+we or the users can in theory switch to another database.
+But, both PostgreSQL and Ecto are battle-tested and should be good enough.
 
 To properly use Elixir and Phoenix,
 we need to first get used to these tools.
@@ -123,11 +132,16 @@ Machine (VM),
 and I am familiar with Rust since I have work with it a lot.
 
 [BEAM]: https://www.erlang.org/blog/a-brief-beam-primer/
+[Ecto]: https://hexdocs.pm/ecto/Ecto.html
 [Elixir]: https://elixir-lang.org
+[Full Stack]: https://www.academia.edu/40632537/The_Full_Stack_Developer_Your_Essential_Guide_to_the_Everyday_Skills_Expected_of_a_Modern_Full_Stack_Web_Developer_Chris_Northwood
 [flyio]: https://fly.io
 [flyio stack]: https://fly.io/docs/hiring/stack/
 [GraphQL]: https://graphql.org
 [LiveView]: https://hex.pm/packages/phoenix_live_view
+[MVC]: https://developer.mozilla.org/en-US/docs/Glossary/MVC
+[ORM]: https://en.wikipedia.org/wiki/Object–relational_mapping
 [OTP]: https://www.erlang.org/doc/design_principles/des_princ.html
 [Phoenix]: https://www.phoenixframework.org
+[PostgreSQL]: https://www.postgresql.org
 [REST]: https://en.wikipedia.org/wiki/Representational_state_transfer
