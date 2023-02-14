@@ -33,7 +33,7 @@ As opposed to what typical servers do,
 we will have a web end to handle the front end and facilitate communication,
 a logic end to handle server logic,
 and a database end to talk to the database.
-The web end is possible because of Phoenix LiveView,
+The web end is possible because of [Phoenix LiveView][LiveView],
 which we will explain later.
 For the server to be future-proof,
 the code structure needs to be clear and modularized,
@@ -44,30 +44,42 @@ While the server needs to be as generic and extensible as possible,
 we shall also provide specific extensions that fits academic needs
 to demonstrate its abilities.
 
-## Back End
+## Web End
 
-The plan is to use the Elixir Programming Language and the Phoenix web framework
-to create the back end of the server.
+The plan is to use [the Elixir Programming Language][Elixir]
+and [the Phoenix Web Framework][Phoenix]
+to create the web end of the server.
 
-Built on top of the Erlang programming language and its Open Telecom Platform
-(OTP),
-Elixir promises free concurrency, publish-subscribe (Pub/Sub),
+### Elixir
+
+We will embrace Elixir, the Phoenix Framework's language of choice,
+and leverage its advantages.
+Because Elixir is built on top of the Erlang Virtual Machine ([the BEAM][BEAM])
+and its [Open Telecom Platform (OTP)][OTP],
+it will be straightforward for us to leverage its free concurrency,
+publish-subscribe (Pub/Sub),
 process isolation, first class documentation, and performance.
 
-As a trade-off, Elixir enforces developers to write purely functional code,
-which is distinct from the more popular imperative and object-oriented
-programming patterns.
-We will follow its functional pattern because it brings us huge benefits.
+On a programming level,
+we will comply with Elixir's requirement that we write purely functional code
+to satisfy its immutability rule.
+Functional programming will bring us huge benefits.
 It is easier to do concurrent and parallel programming with functional
-programming because each function owns all the data it needs to do its task.
+programming because immutability eliminates most data races.
 It is also easier to define interfaces and APIs that have clear boundaries
-using functional programming.
+by simply defining pure functions.
 
-We will use the Phoenix web framework to obtain basic back end capabilities.
-Implementing the HTTP protocol,
-parsing JSONs, preventing denial of service attacks,
-and other basic capabilities should not be reimplemented,
-but rather inherited from a battle-tested framework.
+### Phoenix Framework
+
+We will use the Phoenix Framework as a solid web server base.
+Phoenix is a full stack web framework that provides all the basic features
+that a web server needs,
+from handling HTTP requests to scaling horizontally.
+
+Phoenix is also a battle-tested framework.
+For example, [fly.io][flyio] uses Phoenix for
+[their user interface][flyio stack].
+
 <!-- todo: stuck -->
 
 We will use PostgreSQL for the database and Phoenix's Ecto Object-Relational
@@ -110,5 +122,12 @@ Rust NIFs can be made safe and guaranteed not to crash the Erlang Virtual
 Machine (VM),
 and I am familiar with Rust since I have work with it a lot.
 
+[BEAM]: https://www.erlang.org/blog/a-brief-beam-primer/
+[Elixir]: https://elixir-lang.org
+[flyio]: https://fly.io
+[flyio stack]: https://fly.io/docs/hiring/stack/
 [GraphQL]: https://graphql.org
+[LiveView]: https://hex.pm/packages/phoenix_live_view
+[OTP]: https://www.erlang.org/doc/design_principles/des_princ.html
+[Phoenix]: https://www.phoenixframework.org
 [REST]: https://en.wikipedia.org/wiki/Representational_state_transfer
