@@ -92,6 +92,19 @@ We will leverage LiveView to move all the front-end logic onto the server
 and communicate the front end with the back end simply using function calls
 on the server.
 
+## Front End
+
+The plan is to mainly use Phoenix and Phoenix LiveView to deliver and update
+the front end,
+and Svelte when front-end computation is needed.
+
+The styling should not be the major part of the project because different
+users of this server will probably want to tweak the theme themselves.
+For the ease and speed of development,
+we will use Tailwindcss to style the front end,
+and probably use some Tailwindcss-specific utility components such as
+TailwindUI.
+
 ## Database End
 
 We will use [PostgreSQL][PostgreSQL] for the database and [Ecto][Ecto] for
@@ -110,19 +123,6 @@ Phoenix so we can gain experience with the common pattern in this programming
 environment.
 After that, we can use the experience to help us design the architecture of
 the web server.
-
-## Front End
-
-The plan is to mainly use Phoenix and Phoenix LiveView to deliver and update
-the front end,
-and Svelte when front-end computation is needed.
-
-The styling should not be the major part of the project because different
-users of this server will probably want to tweak the theme themselves.
-For the ease and speed of development,
-we will use Tailwindcss to style the front end,
-and probably use some Tailwindcss-specific utility components such as
-TailwindUI.
 
 ## Auxiliary Libraries
 
