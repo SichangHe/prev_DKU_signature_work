@@ -30,9 +30,9 @@ behaviors of the web part of the server,
 making it less extensible.
 
 As opposed to what typical servers do,
-we will have a web end to handle the front end and facilitate communication,
-a logic end to handle server logic,
-and a database end to talk to the database.
+we will have a *web end* to handle the front end and facilitate communication,
+a *logic end* to handle server logic,
+and a *database end* to talk to the database.
 The web end is possible because of [Phoenix LiveView][LiveView],
 which we will explain later.
 For the server to be future-proof,
@@ -110,6 +110,21 @@ users of this server will probably want to tweak the theme themselves.
 For the ease and speed of development,
 and probably use some Tailwindcss-specific utility components such as
 TailwindUI.
+
+## Logic End
+
+The business logic of the server should be separated into its own module.
+This Elixir module will provide the minimal data structure and functions
+to operate the server's logic.
+This is desirable because it allows a stable interface to reason about the
+server logic,
+and prevents much of the complexity of the web end and the database end from
+leaking into the business logic.
+An immediate benefit will be that the logic end could be tested without the
+other components.
+With a separate logic end,
+we can hopefully eliminate most of the possibilities of introducing unwanted
+behaviors when maintaining or extending the server.
 
 ## Database End
 

@@ -4,6 +4,7 @@
 
 1. Survey academic forum users for their expectations on these forums.
 1. Build a mock server and test out the code structure.
+1. Build the business logic for the server as a separate module.
 1. Build the actual server as a monolith.
 1. Try to separate the components of the server and split them into libraries.
 1. Make a usable UI and user authentication and launch a public testing.
