@@ -8,6 +8,7 @@
 1. Try to separate the components of the server and split them into libraries.
 1. Make a usable UI and user authentication and launch a public testing.
 1. Rework based on public testing feedback.
-1. Work on i18n support and other independent structures.
+1. Work on i18n support and other independent structures and plugins.
+1. Test its horizontal scalability.
 1. Design native applications.
 <!-- If we ever get that far. -->

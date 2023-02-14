@@ -13,6 +13,12 @@ and a monolithic web server,
 all under the MIT license.
 All the parts should be well-documented and provide clear APIs.
 
+## A LiveView Experiment
+
+Phoenix LiveView is a relatively new concept,
+so testing out whether it works well for building a forum is a good reference
+for how mature it is.
+
 ## System Design Experience
 
 During the design and development of the server,
@@ -31,5 +37,3 @@ The testing will allow us to sense the immediate problem we have and improve
 upon it,
 while demonstrating the features of the forum web server and the openness of
 its development.
-
-<!-- todo: what else? -->
