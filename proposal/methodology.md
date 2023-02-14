@@ -73,17 +73,26 @@ by simply defining pure functions.
 
 We will use the Phoenix Framework as a solid web server base.
 Phoenix is a [full stack][Full Stack] [MVC][MVC]
-web framework that provides all the basic features
-that a web server needs,
-from handling HTTP requests to scaling horizontally.
+web framework that provides all the conventional features
+that an MVC web framework provides,
+from handling HTTP requests and routing to scaling horizontally.
 
 Phoenix is also a battle-tested framework.
 For example, [fly.io][flyio] uses Phoenix for
 [their user interface][flyio stack].
 
-<!-- todo: stuck -->
+### Phoenix LiveView
 
-### Database
+[Phoenix LiveView][LiveView] is a module the Phoenix Framework provides that
+empowers developers to make interactive web applications while preserving all
+the states of the application on the server.
+
+We will simplify front-end development with LiveView as much as possible.
+We will leverage LiveView to move all the front-end logic onto the server
+and communicate the front end with the back end simply using function calls
+on the server.
+
+## Database End
 
 We will use [PostgreSQL][PostgreSQL] for the database and [Ecto][Ecto] for
 Object-Relational Mapping ([ORM][ORM]).
