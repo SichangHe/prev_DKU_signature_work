@@ -2,20 +2,47 @@
 
 <!-- How do you intend to accomplish the project? -->
 
+## Overall Architecture
+
+The overall architecture of the server would be similar to a typical web server
+but with different module separation.
 The forum web server, like most web server applications,
-will require a back end to communicate with its clients,
-and a front end that will get shipped to the user for them to interact with,
-and standalone auxiliary libraries that help the front end and the back end
+will require a *back end* to communicate with its clients,
+and a *front end* to ship to the client for users to interact with,
+and standalone *auxiliary libraries* that help the front end and the back end
 accomplish certain tasks.
-Besides these, the server needs to satisfy the special functionality that
-an academic forum has.
+But, we will merge part of the back end and the front end into *the web end*,
+and split the rest of the back end into database communication and business
+logic.
 
-We will apply corresponding methodologies to address these needs.
+The typical methodology would be to have a front end written in JavaScript,
+a back end in some other programming language like Python that both serves
+the front end and handles business logic,
+and establish [REST][REST] or [GraphQL][GraphQL] APIs between them to communicate.
+However, this design brings major drawbacks.
+Any front end changes relating to the APIs require changes in the back end,
+and vise versa.
+The two changes are usually far away in the code base and
+written in different programming languages,
+causing a context switch and extra testing and maintainability burden.
+Any business logic change or additional plugins would need to accommodate the
+behaviors of the web part of the server,
+making it less extensible.
 
-<!-- For the server to be future-proof,
+As opposed to what typical servers do,
+we will have a web end to handle the front end and facilitate communication,
+a logic end to handle server logic,
+and a database end to talk to the database.
+The web end is possible because of Phoenix LiveView,
+which we will explain later.
+For the server to be future-proof,
 the code structure needs to be clear and modularized,
-and the exposed application programming interface (API) should ideally to be
-just enough to control the programs behavior. -->
+and the exposed API should ideally to be
+just enough to control the program's behavior.
+
+While the server needs to be as generic and extensible as possible,
+we shall also provide specific extensions that fits academic needs
+to demonstrate its abilities.
 
 ## Back End
 
@@ -82,3 +109,6 @@ languages,
 Rust NIFs can be made safe and guaranteed not to crash the Erlang Virtual
 Machine (VM),
 and I am familiar with Rust since I have work with it a lot.
+
+[GraphQL]: https://graphql.org
+[REST]: https://en.wikipedia.org/wiki/Representational_state_transfer
