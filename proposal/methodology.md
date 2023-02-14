@@ -135,15 +135,15 @@ the web server.
 Most of the components that could be separated into libraries will be
 Elixir libraries because this will be an Elixir application.
 These Elixir libraries could either be a set of synchronous functions
-or some services implemented using GenServer.
+or some services implemented using [GenServer][GenServer].
 
 If the performance of any of the libraries is critical,
 we consider making Elixir native implemented functions (NIFs) library using
 the Rust programming language.
 Rust is ideal for this purpose because it is one of the fastest programming
 languages,
-Rust NIFs can be made safe and guaranteed not to crash the Erlang Virtual
-Machine (VM),
+[Rustler][Rustler] provides an easy and safe way to build Rust NIFs that are
+guaranteed not to crash the BEAM,
 and I am familiar with Rust since I have work with it a lot.
 
 [BEAM]: https://www.erlang.org/blog/a-brief-beam-primer/
@@ -153,6 +153,7 @@ and I am familiar with Rust since I have work with it a lot.
 [Full Stack]: https://www.academia.edu/40632537/The_Full_Stack_Developer_Your_Essential_Guide_to_the_Everyday_Skills_Expected_of_a_Modern_Full_Stack_Web_Developer_Chris_Northwood
 [flyio]: https://fly.io
 [flyio stack]: https://fly.io/docs/hiring/stack/
+[GenServer]: https://hexdocs.pm/elixir/1.12/GenServer.html
 [GraphQL]: https://graphql.org
 [LiveView]: https://hex.pm/packages/phoenix_live_view
 [MVC]: https://developer.mozilla.org/en-US/docs/Glossary/MVC
@@ -161,5 +162,6 @@ and I am familiar with Rust since I have work with it a lot.
 [Phoenix]: https://www.phoenixframework.org
 [PostgreSQL]: https://www.postgresql.org
 [REST]: https://en.wikipedia.org/wiki/Representational_state_transfer
+[Rustler]: https://github.com/rusterlium/rustler
 [Svelte]: https://svelte.dev
 [Tailwindcss]: https://tailwindcss.com
