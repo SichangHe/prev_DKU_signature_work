@@ -2,8 +2,6 @@
 
 <!-- What is the importance, to you, of the project? -->
 
-current forums are …
-
 ## Motivation
 
 My experiences using forums for academic discussions are unpleasant.
@@ -11,7 +9,7 @@ These discussions include discussions for courses on [Sakai][Sakai] and [Ed][Ed]
 and general discussions on [Stack Exchange][Stack Exchange].
 These experiences are unpleasant for different reasons:
 for Sakai Discussion,
-the web interfaces are unintuitive to use and irresponsive;
+the web interfaces are unintuitive to use and the response is slow;
 for Ed,
 the online editor lacks enough power to help me type out what I want;
 and for Stack Exchange,
@@ -24,17 +22,18 @@ to adapt to their own usage.
 Since the above forum platforms (except Sakai) are proprietary,
 organizations cannot simply tweak them and rather need to rely on the
 platform provider to address these issues or provide an extra setting.
-By making a fully open source, performant and extensible academic forum,
+By making a fully free and open source,
+responsive and extensible academic forum,
 I can give academic organizations the full power to adapt it to their needs
 by programmatically modifying the interface.
 
 Besides the practical applications,
-the design and implementation is also an attractive task.
-<!-- connect -->
-A generic academic forum web server is particularly interesting to study
-because it brings the below challenges.
+the design and implementation of a generic academic forum web server
+is also an attractive task from a developer's
+perspective because it brings several challenges.
+To be specific about these challenges,
+we will define the concepts related to the server below.
 
-<!-- clarify we will define things -->
 ## Web Development
 
 [Web development][Web development] is one of the most challenging aspects of programming.
@@ -57,16 +56,18 @@ Web development brings up three immediate challenges:
     with more CPU cores and even more computer units.
 - Managing the growing complexity of the code base and database.
 
-<!-- why? connect -->
-These challenges make web development the most desirable choice to gain more
+These hard challenges require developers to gain more relevant knowledge and
+improve their abilities to address them,
+which makes web development the most desirable choice to gain more
 knowledge and experience on systems programming.
 
 ## Forum on the Web
 
-<!-- e.g. Reddit -->
 A forum is a place where a group of individuals can discuss.
 A forum on the web enables users to discuss together about what they care
 about regardless of the physical distance between them.
+For example, Reddit has been a popular forum where users discuss about a
+certain topic on each subreddit.
 
 Forum on the web brings up all the major challenges web programming brings:
 
@@ -93,10 +94,9 @@ Forum on the web brings up all the major challenges web programming brings:
 
 ## Academic Forum
 
-<!-- why is this different from web forum -->
-
 An academic forum should provide a platform for participants to discuss
 academic topics.
+It could either be online or in-person.
 Academic discussions have special requirements that ordinary forums do not
 provide:
 
@@ -112,17 +112,19 @@ provide:
     computer and automatically generate citation based on links or text search.
 - Visibility groups that are small and complex.
 
-    Academic activities are usually, unfortunately, closed-source.
-    <!-- because -->
+    Academic activities are usually, unfortunately, closed-source because
+    isolation is in the core of academic activities.
     Organizations want to stay one step ahead of their competition,
     education wants to isolate the students from the straightforward answer
     to their homework.
     The power in control of a certain academic forum typically will come to
     a point where they want someone to see a post but not others,
     and this requirement changes slightly or significantly from content to
-    content,
-    <!-- e.g. TA -->
-    so a powerful system to control visibility is required.
+    content.
+    For example, instructors might want some of their Teaching Assistants to
+    see posts by the students under a specific section for a specific time
+    period.
+    So, a powerful system to control visibility is required.
 
     This also relates to security requirements.
     If the server can be hacked to view unauthorized content,

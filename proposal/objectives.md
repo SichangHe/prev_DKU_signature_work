@@ -3,7 +3,7 @@
 <!-- What are the key goals of the project? -->
 
 The goal is to create a generic forum web server that is easy to maintain,
-extensible, user-friendly, performant, and fits academic use.
+extensible, user-friendly, responsive, and fits academic use.
 
 To get a grasp of how the server should look like,
 think about a platform that behaves like Ed,
@@ -85,12 +85,15 @@ places in the user interface,
 support internationalization and localization (i18n) for
 users using different languages,
 and follow a mobile-first approach.
+It also should be responsive,
+which means that users should be able to get responses very shortly after they
+perform any actions.
 
 ## Server Performance
 
-The forum web server needs to be able to handle high throughput and scale well.
-<!-- logic -->
-In case the academic organization becomes successful, its
+For the forum web server to stay responsive,
+it needs to be able to handle high throughput and scale well.
+In case the academic organization adopts the forum rapidly, its
 web forums can have a quadratically growing user count.
 Such rapid growth can lead to server overloads,
 slowing it down or even causing server downtime.
