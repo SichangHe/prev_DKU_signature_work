@@ -13,7 +13,7 @@ and more extension points to enable features like what
 [Citation Machine][Citation Machine] provides.
 
 To specify the goal,
-the following breaks up and defines the concepts involved.
+the following breaks down and defines the concepts involved.
 
 ## Generic Forum Web Server
 
@@ -37,7 +37,7 @@ but their visibility can also be tuned as needed.
 These contents can be edited, hidden, or deleted by the author or moderators.
 
 For the forum web server to be generic,
-it needs to both provide a good base and leave enough room for extensions.
+it needs to both provide a good foundation and leave enough room for extensions.
 It needs to implement all of the basic protocols a web forum provides,
 such as the ability to post different kinds of content,
 change content visibility and ownership,

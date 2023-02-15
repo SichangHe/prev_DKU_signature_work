@@ -2,6 +2,8 @@
 
 <!-- What is the importance, to you, of the project? -->
 
+current forums are …
+
 ## Motivation
 
 My experiences using forums for academic discussions are unpleasant.
@@ -22,12 +24,13 @@ to adapt to their own usage.
 Since the above forum platforms (except Sakai) are proprietary,
 organizations cannot simply tweak them and rather need to rely on the
 platform provider to address these issues or provide an extra setting.
-By making a fulling open source, performant and extensible academic forum,
+By making a fully open source, performant and extensible academic forum,
 I can give academic organizations the full power to adapt it to their needs
 by programmatically modifying the interface.
 
 Besides the practical applications,
 the design and implementation is also an attractive task.
+<!-- connect -->
 A generic academic forum web server is particularly interesting to study
 because it brings the below challenges.
 
@@ -53,11 +56,13 @@ Web development brings up three immediate challenges:
     with more CPU cores and even more computer units.
 - Managing the growing complexity of the code base and database.
 
+<!-- why? connect -->
 These challenges make web development the most desirable choice to gain more
 knowledge and experience on systems programming.
 
 ## Forum on the Web
 
+<!-- e.g. Reddit -->
 A forum is a place where a group of individuals can discuss.
 A forum on the web enables users to discuss together about what they care
 about regardless of the physical distance between them.
@@ -87,6 +92,8 @@ Forum on the web brings up all the major challenges web programming brings:
 
 ## Academic Forum
 
+<!-- why is this different from web forum -->
+
 An academic forum should provide a platform for participants to discuss
 academic topics.
 Academic discussions have special requirements that ordinary forums do not
@@ -105,6 +112,7 @@ provide:
 - Visibility groups that are small and complex.
 
     Academic activities are usually, unfortunately, closed-source.
+    <!-- because -->
     Organizations want to stay one step ahead of their competition,
     education wants to isolate the students from the straightforward answer
     to their homework.
@@ -112,6 +120,7 @@ provide:
     a point where they want someone to see a post but not others,
     and this requirement changes slightly or significantly from content to
     content,
+    <!-- e.g. TA -->
     so a powerful system to control visibility is required.
 
     This also relates to security requirements.
