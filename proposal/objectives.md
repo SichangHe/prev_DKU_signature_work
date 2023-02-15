@@ -56,8 +56,8 @@ improving its performance, and adding new features.
 During these updates,
 it is crucial that the server as a piece of software is highly maintainable
 and extensible,
-otherwise it would either result in large maintenance costs and suggests the
-organizations to switch to other products,
+otherwise the server would either result in large maintenance costs and suggests
+the organizations to switch to other products,
 or it would fail the organizations' needs.
 
 Developers should be able to customize the server and reuse a portion of its
@@ -80,8 +80,8 @@ they need an intuitive user experience.
 The server should prioritize the focus on academic discussions,
 and help the users to stay in a positive mood during their activities.
 To help with users experience,
-the server should provide functions that academic users need in obvious places
-in the user interface,
+the server should provide functions that academic users need in visually obvious
+places in the user interface,
 support internationalization and localization (i18n) for
 users using different languages,
 and follow a mobile-first approach.
@@ -89,6 +89,7 @@ and follow a mobile-first approach.
 ## Server Performance
 
 The forum web server needs to be able to handle high throughput and scale well.
+<!-- logic -->
 In case the academic organization becomes successful, its
 web forums can have a quadratically growing user count.
 Such rapid growth can lead to server overloads,
@@ -102,7 +103,7 @@ which means that the organization can simply deploy the server on more powerful
 machines or more machines to handle a higher load.
 
 Organizations can safely adopt the server to their use,
-knowing that the server is performant and will scalable if their needs grow.
+knowing that the server is performant and will scale if their needs grow.
 
 [Citation Machine]: https://www.citationmachine.net
 [GitHub]: https://github.com

@@ -34,6 +34,7 @@ the design and implementation is also an attractive task.
 A generic academic forum web server is particularly interesting to study
 because it brings the below challenges.
 
+<!-- clarify we will define things -->
 ## Web Development
 
 [Web development][Web development] is one of the most challenging aspects of programming.
